@@ -44,6 +44,8 @@ enum layers {
 #define XX_SLSH S(KC_7)
 #define XX_LT   KC_GRV
 #define XX_GT   S(KC_GRV)
+#define XX_TILD A(KC_RBRC)
+#define XX_CIRC S(KC_RBRC)
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 [MAC_BASE] = LAYOUT_61_ansi(
@@ -62,7 +64,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 [SYMBOL] = LAYOUT_61_ansi(
     _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,
-    _______,  _______,  _______,  _______,  _______,  _______,  XX_SLSH,  XX_LCBR,  XX_RCBR,  _______,  _______,  _______,  _______,  _______,
+    _______,  _______,  _______,  _______,  _______,  _______,  XX_SLSH,  XX_LCBR,  XX_RCBR,  XX_TILD,  XX_CIRC,  _______,  _______,  _______,
     _______,  _______,  _______,  _______,  _______,  _______,  XX_PIPE,  XX_LPRN,  XX_RPRN,  XX_LT,    XX_GT,    _______,            _______,
     _______,            _______,  _______,  _______,  _______,  XX_BSLS,  XX_LBRC,  XX_RBRC,  _______,  _______,  _______,            _______,
     _______,  _______,  _______,                                _______,                                _______,  _______,  _______,  _______),
